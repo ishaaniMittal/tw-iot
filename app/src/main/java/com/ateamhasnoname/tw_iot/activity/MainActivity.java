@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         String destinationText = destination.getText().toString();
         String noOfPeopleText = noOfPassenger.getText().toString();
 
-        startActivity(new Intent(this, RoutesActivity.class));
+        startActivity(new Intent(this, SingleRouteViewActivity.class));
         // TODO: call volley service
     }
 
