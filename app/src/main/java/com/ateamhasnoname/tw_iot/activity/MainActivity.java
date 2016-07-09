@@ -1,5 +1,6 @@
 package com.ateamhasnoname.tw_iot.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         String destinationText = destination.getText().toString();
         String noOfPeopleText = noOfPassenger.getText().toString();
 
+        startActivity(new Intent(this,RoutesActivity.class));
         // TODO: call volley service
     }
 

@@ -5,8 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import com.ateamhasnoname.tw_iot.R;
+import com.ateamhasnoname.tw_iot.model.Routes;
+
+import java.util.List;
 
 public class RoutesActivity extends AppCompatActivity {
+
+    private List<Routes> routesList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +20,17 @@ public class RoutesActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-       
+
+
+        callServiceToGetRoutesList();
+
+
+    }
+
+
+
+    private void callServiceToGetRoutesList() {
+
     }
 
 }
