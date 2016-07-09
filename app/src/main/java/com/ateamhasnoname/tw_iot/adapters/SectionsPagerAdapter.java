@@ -20,11 +20,11 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new TimelineViewFragment();
+                return TimelineViewFragment.newInstance();
             case 1:
-                return new MapViewFragment();
+                return MapViewFragment.newInstance();
         }
-        return new TimelineViewFragment();
+        return TimelineViewFragment.newInstance();
     }
 
     @Override

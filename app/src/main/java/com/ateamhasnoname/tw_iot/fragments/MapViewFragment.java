@@ -14,6 +14,12 @@ public class MapViewFragment extends Fragment {
         // Required empty public constructor
     }
 
+    public static Fragment newInstance() {
+        Fragment fragment = new MapViewFragment();
+        return fragment;
+    }
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

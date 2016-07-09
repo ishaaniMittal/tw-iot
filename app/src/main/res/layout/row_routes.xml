@@ -56,6 +56,7 @@
                 android:textAlignment="center">
 
                 <TextView
+                    android:id="@+id/commute_one"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="By Auto"
@@ -76,7 +77,7 @@
                         android:src="@drawable/clock" />
 
                     <TextView
-                        android:id="@+id/travel_duration"
+                        android:id="@+id/travel_duration_commute_one"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="3dp"
@@ -109,6 +110,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/commute_two_stop_one"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Tata Guard Room"
@@ -123,6 +125,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/commute_two_stop_two"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Wadgoan Sheri"
@@ -172,6 +175,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/commute_three"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="By Auto"

@@ -11,13 +11,15 @@ import com.vipul.hp_hp.timelineview.TimelineView;
  * Created by imittal on 7/9/16.
  */
 public class TimeLineViewHolder extends RecyclerView.ViewHolder {
-    public TextView name;
-    public  TimelineView mTimelineView;
+    public TextView stopName, travelDuration;
+    public TimelineView mTimelineView;
 
     public TimeLineViewHolder(View itemView, int viewType) {
         super(itemView);
-        name = (TextView) itemView.findViewById(R.id.tx_name);
+
         mTimelineView = (TimelineView) itemView.findViewById(R.id.time_marker);
         mTimelineView.initLine(viewType);
+        stopName = (TextView) itemView.findViewById(R.id.stop_name);
+        travelDuration = (TextView) itemView.findViewById(R.id.travel_duration);
     }
 }

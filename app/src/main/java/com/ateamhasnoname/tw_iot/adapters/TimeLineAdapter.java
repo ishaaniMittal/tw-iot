@@ -46,7 +46,6 @@ public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineViewHolder> {
     public void onBindViewHolder(TimeLineViewHolder holder, int position) {
 
         TimeLineModel timeLineModel = mFeedList.get(position);
-        holder.name.setText("name：" + timeLineModel.getName() + "    age：" + timeLineModel.getAge());
 
     }
 
