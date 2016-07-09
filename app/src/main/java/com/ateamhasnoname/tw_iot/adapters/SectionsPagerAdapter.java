@@ -4,7 +4,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.ateamhasnoname.tw_iot.activity.SingleRouteViewActivity;
 import com.ateamhasnoname.tw_iot.fragments.MapViewFragment;
 import com.ateamhasnoname.tw_iot.fragments.TimelineViewFragment;
 
@@ -19,13 +18,13 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        switch(position){
+        switch (position) {
             case 0:
-                return TimelineViewFragment.newInstance();
+                return new TimelineViewFragment();
             case 1:
-                return MapViewFragment.newInstance();
+                return new MapViewFragment();
         }
-       return TimelineViewFragment.newInstance();
+        return new TimelineViewFragment();
     }
 
     @Override

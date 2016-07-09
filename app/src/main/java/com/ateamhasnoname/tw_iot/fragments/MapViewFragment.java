@@ -21,7 +21,5 @@ public class MapViewFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_map_view, container, false);
     }
 
-    public static Fragment newInstance() {
-        return null;
-    }
+
 }
